@@ -24,8 +24,8 @@ export default function Home() {
     async function fetchListings() {
 
       const info = [
-        { text: "Years experience", count: "07" },
-        { text: "Sold Houses", count: "244" },
+        { text: "Years experience", count: "17" },
+        { text: "Sold Houses", count: "770" },
       ];
       try {
         // get reference
@@ -113,6 +113,11 @@ export default function Home() {
     }
     fetchListings();
   }, []);
+
+  const info = [
+    { text: "Years experience", count: "17" },
+    { text: "Sold Houses", count: "770" },
+  ];
   return (
     <div>
       <Homepage />
@@ -176,21 +181,23 @@ export default function Home() {
           </div>
         )}
       </div>
+
+
       <section id="about" className="bg-black py-10 text-white">
     <div className="text-center mt-8">
       <h3 className=" text-4xl font-semibold">
-        About <span className="text-cyan-600">Me</span>
+        About <span className="text-cyan-600">Casey</span>
       </h3>
-      <p className="text-gray-400 my-3 text-lg">My introduction</p>
+      <p className="text-gray-400 my-3 text-lg">Email: <a  onClick={() => window.location = 'mailto:casey.milton@hotmail.com'}  className="cursor-pointer text-cyan-600">Casey.milton@hotmail.com</a></p>
       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         <div className="p-2">
           <div className=" text-gray-300 my-3">
             <p className={` text-justify leading-7 w-11/12 mx-auto`}>
-            Eric Gage is a top-producing real estate agent in both Houston and Galveston County. Previously the broker/owner of RE/MAX City View located in Houston's Montrose neighborhood, Eric specializes in Houston’s Inner-Loop neighborhoods and Galveston County waterfront properties.
+            Casey Milto is a top-producing real estate agent in both Houston and Galveston County. Previously the broker/owner of RE/MAX City View located in Houston's Montrose neighborhood, Casey specializes in Houston’s Inner-Loop neighborhoods and Galveston County waterfront properties.
 
-Eric owes his success in the highly competitive real estate field to his extensive background in city management and economic development. Prior to real estate, he worked in municipal government in La Marque, Texas, and the City of Pearland where he gained valuable knowledge of city codes and zoning requirements and developed his keen negotiating and people skills. This experience sparked his passion for real estate and helped him launch his real estate career in 2006. A real estate investor himself, Eric is a highly knowledgeable, dedicated, and trusted broker who puts his clients' best interests first. He works fervently through every aspect of the deal and treats all transactions equally, no matter the price range.
+Casey owes his success in the highly competitive real estate field to his extensive background in city management and economic development. Prior to real estate, he worked in municipal government in La Marque, Texas, and the City of Pearland where he gained valuable knowledge of city codes and zoning requirements and developed his keen negotiating and people skills. This experience sparked his passion for real estate and helped him launch his real estate career in 2006. A real estate investor himself, Casey is a highly knowledgeable, dedicated, and trusted broker who puts his clients' best interests first. He works fervently through every aspect of the deal and treats all transactions equally, no matter the price range.
 
-Eric maintains a home on the water near Galveston Island and loves cruising on his boat and taking his RV out for a weekend. He enjoys giving back to the community and has served on boards and committees for the Texas City / La Marque Chamber of Commerce, the Mainland Rotary Club, and the Mainland United Way. A proud member and float captain for Galveston’s Krewe of Gambrinus, Eric reigned as King Gambrinus for their 2022 Mardi Gras Parade and is on the Board of Directors for this prominent non-profit group. A member of the Houston Area Realtors Association, Texas Realtors Association and the National Realtors Association, Eric holds a B.A. degree from Texas State University at San Marcos.
+Casey maintains a home on the water near Galveston Island and loves cruising on his boat and taking his RV out for a weekend. He enjoys giving back to the community and has served on boards and committees for the Texas City / La Marque Chamber of Commerce, the Mainland Rotary Club, and the Mainland United Way. A proud member and float captain for Galveston’s Krewe of Gambrinus, Casey reigned as King Gambrinus for their 2022 Mardi Gras Parade and is on the Board of Directors for this prominent non-profit group. A member of the Houston Area Realtors Association, Texas Realtors Association and the National Realtors Association, Casey holds a B.A. degree from Texas State University at San Marcos.
             </p>
             {/*<button className='text-cyan-600'  onClick={()=>setIsOpen(!isOpen)}>{isOpen? 'Read less...': 'Read more...'}</button>
           */}
@@ -207,8 +214,7 @@ Eric maintains a home on the water near Galveston Island and loves cruising on h
               src={aboutImg}
               alt=""
               className="w-full object-cover bg-cyan-600 rounded-xl"
-            />
-             <div className="flex mt-10 items-center gap-7">
+            /> <div className="flex mt-10 items-center gap-7">
               {info.map((content) => (
                 <div key={content.text}>
                   <h3 className="md:text-4xl text-2xl font-semibold text-white">
@@ -224,6 +230,7 @@ Eric maintains a home on the water near Galveston Island and loves cruising on h
       </div>
     </div>
   </section>
+     
       <Footer />
     </div>
   );

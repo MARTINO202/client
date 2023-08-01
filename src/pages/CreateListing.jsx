@@ -81,7 +81,7 @@ export default function CreateListing() {
       toast.error("Discounted price needs to be less than regular price");
       return;
     }
-    if (images.length > 6) {
+    if (images.length > 16) {
       setLoading(false);
       toast.error("maximum 16 images are allowed");
       return;
@@ -424,7 +424,7 @@ export default function CreateListing() {
         <div className="mb-6">
           <p className="text-lg font-semibold">Images</p>
           <p className="text-gray-600">
-            The first image will be the cover (max 6)
+            The first image will be the cover (max 16)
           </p>
           <input
             type="file"

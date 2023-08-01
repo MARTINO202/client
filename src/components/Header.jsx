@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu,FiHouse } from "react-icons/fi";
 import { HiOutlineUser } from "react-icons/hi";
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import HeaderBtn from "./HeaderBtn";
@@ -76,10 +76,15 @@ export default function Header({ title, border, underline }) {
             className="h-5 cursor-pointer"
             onClick={() => navigate("/")}  https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg
   />*/}
-          <div className="shrink-0 pr-2">
+          <div className="shrink-0 pr-2 flex">
           {/* Logo */}
-          <div className=" -my-[0.7rem] cursor-pointer ">
-            <img src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg" className="w-32  shrink-0" onClick={() => navigate("/")} />
+          <div className=" -my-[0.7rem] cursor-pointer flex text-cyan-600">
+          <svg  onClick={() => navigate("/")} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+</svg>
+
+             <h1  onClick={() => navigate("/")} className="text-2xl font-semibold italic text-black">
+              Casey<span className="text-cyan-600">Homes</span></h1>
           </div>
         </div>
 
@@ -168,7 +173,7 @@ export default function Header({ title, border, underline }) {
               {/* linke items */}
               <div className="flex  ">
               <ul className={`flex   group text-[20px] whitespace-nowrap  space-x-2 items-center   w-full space-y-0  lg:w-auto lg:space-y-0 lg:space-x-2   py-4`}>
-                 <li onClick={() => navigate("/Offers")} className="bg-black  hover:bg-sky-700 text-white cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Buy </li>
+                 <li onClick={() => navigate("/Offers")} className="bg-black  hover:text-cyan-600 text-white cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Buy </li>
                 {/* <li onClick={() => navigate("/category/sale")} className="cursor-pointer"> Sale</li>*/}
                 {/* <li onClick={() => navigate("/category/rent")} className="cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Rent </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer">Mortgage </li>
@@ -192,7 +197,7 @@ export default function Header({ title, border, underline }) {
 
         <div className=" lg:flex   items-center pl-6 text-[13px]">
         <li
-              className={` bg-[#e20112] shadow hover:bg-sky-700  py-[10px] text-white rounded-full px-4 ml-6 flex items-center ${
+              className={` bg-cyan-700  hover:bg-sky-700  py-[10px] text-white rounded-full px-4 ml-6 flex items-center ${
                 (pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&
                 "text-black border-b-red-500"
               }`}
