@@ -117,7 +117,7 @@ export default function CreateListing() {
       toast.error("Discounted price needs to be less than regular price");
       return;
     }
-    if (images.length > 6) {
+    if (images.length > 16) {
       setLoading(false);
       toast.error("maximum 6 images are allowed");
       return;

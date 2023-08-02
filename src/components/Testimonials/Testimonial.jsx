@@ -1,10 +1,14 @@
 import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
-import { Pagination } from "swiper/modules";
-import "swiper/css/pagination";
+import  {Scrollbar, A11y,Autoplay,EffectFade,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import "swiper/css/bundle";
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
@@ -49,9 +53,19 @@ const Testimonial = () => {
       </div>
       <Swiper
         // install Swiper modules
-        modules={[Pagination]}
+        modules={[Navigation, Pagination,EffectFade,Autoplay ,Scrollbar, A11y]}
+        spaceBetween={5}
         slidesPerView={1}
+        navigation={true}
+        
+
+
+
         pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+     
       >
         {clients.map((client, index) => {
           return (

@@ -1,6 +1,6 @@
 .t-wrapper{
-    padding:  0 3rem 0 3rem;;
-    height: 100vh;
+    padding:  0 ;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@
     position: relative;
 }
 .t-heading{
-    align-self: start;
+    align-self: center;
     font-size: 4px;
 }
 .t-heading>*{
