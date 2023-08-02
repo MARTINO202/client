@@ -38,7 +38,7 @@ function About() {
       <h3 className=" text-4xl font-semibold">
         About <span className="text-cyan-600">Casey</span>
       </h3>
-      <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:casey.milton@hotmail.com'}  className="cursor-pointer text-cyan-600">Casey.milton@hotmail.com</a></p>
+      <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@caseyhomes.com</a></p>
       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         <div className="p-2">
           <div className=" text-gray-300 my-3">
@@ -67,9 +67,9 @@ Casey maintains a home on the water near Galveston Island and loves cruising on 
             /> <div className="flex mt-10 items-center gap-7">
               {info.map((content) => (
                 <div key={content.text}>
-                  <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                  <h3 className="md:text-4xl gap-4 text-2xl font-semibold text-white">
                     {content.count}
-                    <span className="text-cyan-600">+</span>{" "}
+                    <span className=" text-cyan-600">+</span>{" "}
                   </h3>
                   <span className="md:text-base text-xs">{content.text}</span>
                 </div>

@@ -16,6 +16,7 @@ import Slider from "../components/Slider";
 import { db } from "../firebase";
 import Homepage from "../components/Homepage"
 import aboutImg from "../assets/aboutImg.jpeg"
+import Testimonial from "../components/Testimonials/Testimonial"
 
 export default function Home() {
   // Offers
@@ -119,7 +120,7 @@ export default function Home() {
     { text: "Sold Houses", count: "770" },
   ];
   return (
-    <div>
+    <div >
       <Homepage />
       {/*<Slider />*/}
       <div className="max-w-6xl mx-auto pt-4 space-y-6">
@@ -182,13 +183,20 @@ export default function Home() {
         )}
       </div>
 
+      <Testimonial />
+
+
+
+
+
+
 
       <section id="about" className="bg-black py-10 text-white">
     <div className="text-center mt-8">
       <h3 className=" text-4xl font-semibold">
         About <span className="text-cyan-600">Casey</span>
       </h3>
-      <p className="text-gray-400 my-3 text-lg">Email: <a  onClick={() => window.location = 'mailto:casey.milton@hotmail.com'}  className="cursor-pointer text-cyan-600">Casey.milton@hotmail.com</a></p>
+      <p className="text-gray-400 my-3 text-lg">Email: <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@caseyhomes.com</a></p>
       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         <div className="p-2">
           <div className=" text-gray-300 my-3">

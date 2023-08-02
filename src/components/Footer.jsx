@@ -51,7 +51,7 @@ const Footer = () => {
           
             <li className="text-cyan-600 cursor-pointer"  onClick={() => navigate("/about")}>About</li>
             <li>
-      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:casey.milton@hotmail.com'}  className="cursor-pointer text-cyan-600">Casey.milton@hotmail.com</a></p>
+      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@caseyhomes.com</a></p>
      </li>
           
         </ul>
