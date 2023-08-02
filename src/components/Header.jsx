@@ -127,20 +127,20 @@ export default function Header({ title, border, underline }) {
 <div className="lg:hidden absolute  top-[55px] right-[11.1rem] w-[100%] z-40 mx-[-99]  bg-white  ">
               <ul className={`inline-block border-2 mb-3  space-x-0 items-center lg:pb-0 pb-12  w-full space-y-20 sm:space-y-15 py-4  ${open ? 'top-12' : 'top-[-490px] hidden'}`}>
                 
-                    <li className='hover:text-cyan-600 relative my-3  border-black text-center margin-bottom-3 left-6 group text-[18px] whitespace-nowrap'>
-                    <a href="/"  className="hover:text-cyan-600" >Home</a>
+                    <li  onClick={() => navigate("/")} className='hover:text-cyan-600 relative my-3  border-black text-center margin-bottom-3 left-6 group text-[18px] whitespace-nowrap'>
+                    <a  className="hover:text-cyan-600" >Home</a>
                        
                     </li>
-                    <li className='hover:text-cyan-600 relative text-center  left-3 group text-[18px] whitespace-nowrap'>
-                    <a href="/offers" className={`px-2  `}>Buy</a>
+                    <li  onClick={() => navigate("/offers")} className='hover:text-cyan-600 relative text-center  left-3 group text-[18px] whitespace-nowrap'>
+                    <a  className={`px-2  `}>Buy</a>
                        
                     </li>
-                    <li className='hover:text-cyan-600 relative text-center left-8 group text-[18px] whitespace-nowrap'>
+                    <li  onClick={() => navigate("/about")} className='hover:text-cyan-600 relative text-center left-8 group text-[18px] whitespace-nowrap'>
                         <a href="/about" className={`px-2 ${border} `}>About Us</a>
                        
                     </li>
-                    <li className='hover:text-cyan-600 relative text-center left-14 group text-[17px] whitespace-nowrap'>
-                        <a href="/" className={`px-2 ${border} `}>Contact an Agent</a>
+                    <li  onClick={() => navigate("/about")} className='hover:text-cyan-600 relative text-center left-14 group text-[17px] whitespace-nowrap'>
+                        <a className={`px-2 ${border} `}>Contact an Agent</a>
                        
                     </li>
                     <li className='relative  text-center group left-14 text-[13px] whitespace-nowrap'>
@@ -189,8 +189,8 @@ export default function Header({ title, border, underline }) {
               <ul className={`flex   group text-[20px] whitespace-nowrap gap-5  space-x-2 items-center   w-full space-y-0  lg:w-auto lg:space-y-0 lg:space-x-2   py-4`}>
                  <li onClick={() => navigate("/")} className="hover:text-cyan-600 cursor-pointer  ">Home </li>
                  <li onClick={() => navigate("/offers")} className="hover:text-cyan-600 cursor-pointer"> Buy</li>
-                 <li onClick={() => navigate("/category/rent")} className="hover:text-cyan-600 cursor-pointer ">About Us </li>
-                 <li onClick={() => navigate("/")} className="hover:text-cyan-600 cursor-pointer">Contact Our Agents </li>
+                 <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer ">About Us </li>
+                 <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer">Contact Our Agents </li>
                 {/*} <li onClick={() => navigate("/")} className="cursor-pointer">Find Realtors </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer ">My Home </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer">News & Insights </li>
