@@ -11,7 +11,7 @@ const Footer = () => {
   
   const navigate = useNavigate();
   return (
-    <div className="bg-[#000] text-white">
+    <div className=" my-5 bg-[#fff] text-black">
       
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
@@ -22,7 +22,7 @@ const Footer = () => {
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
 
-             <h1  onClick={() => navigate("/")} className="text-2xl font-semibold italic text-white">
+             <h1  onClick={() => navigate("/")} className="text-2xl font-semibold italic text-black">
               Casey<span className="text-cyan-600">Homes</span></h1>
           </div>
         </div>
@@ -39,27 +39,27 @@ const Footer = () => {
           </div>
         </ul>
 
-        <ul className="text-center text-grey sm:text-start">
-          <h1 className="mb-1 font-semibold">Company</h1>
+        <ul className="text-center  text-black sm:text-start">
+          <h1 className="mb-1 font-semibold text-black">Company</h1>
           
             <li> Casey<span className="text-cyan-600">Homes.com</span></li>
           
         </ul>
 
-        <ul className="text-center text-grey sm:text-start">
-          <h1 className="mb-1 font-semibold">About Us</h1>
+        <ul className="text-center text-black sm:text-start">
+          <h1 className="mb-1 font-semibold text-black">About Us</h1>
           
             <li className="text-cyan-600 cursor-pointer"  onClick={() => navigate("/about")}>About</li>
             <li>
-      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@caseyhomes.com</a></p>
+      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">caseyhomes.com</a></p>
      </li>
           
         </ul>
 
         
 
-        <ul className="text-center text-grey sm:text-start">
-          <h1 className="mb-1 font-semibold">SPONSORS</h1>
+        <ul className="text-center sm:text-start">
+          <h1 className="mb-1 font-semibold text-black">SPONSORS</h1>
           <li>VISA</li>
             <li>VERVE</li>
             <li>MASTER CARD</li>

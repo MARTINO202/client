@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./components/About";
+import Agent from "./components/Agent";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
@@ -15,6 +16,10 @@ import CreateListing from "./pages/CreateListing";
 import EditListing from "./pages/EditListing";
 import Listing from "./pages/Listing";
 import Category from "./pages/Category";
+import Services from "./components/Services";
+import Portfolio from './components/Portfolio/Portfolio';
+import Blog from "./components/Blog/Blog"
+
 function App() {
   return (
     <>
@@ -27,7 +32,14 @@ function App() {
             <Route path="/profile" element={<Profile />} />
           </Route> 
           
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/offers" element={<Offers />} />
           <Route path="/about" element={<About />} />
+          <Route path="/agent" element={<Agent />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
+          
+          
           
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
@@ -36,7 +48,7 @@ function App() {
             path="/category/:categoryName/:listingId"
             element={<Listing />}
           />
-          <Route path="/offers" element={<Offers />} />
+          
           <Route path="/category/:categoryName" element={<Category />} />
           <Route path="create-listing" element={<PrivateRoute />}>
             <Route path="/create-listing" element={<CreateListing />} />

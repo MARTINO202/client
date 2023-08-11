@@ -81,18 +81,17 @@ export default function Offers() {
     <>
     
     <div className="max-w-6xl mx-auto px-3">
-      
     <Link to="/">
     <button
-                
-                className="bg-white px-3 py-1.5 text-gray-700 border border-gray-300 mb-0 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out"
+                className="bg-white m-0 px-3 py-1 text-gray-700 border border-gray-300 mb-0 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
 </svg>
 
-              </button></Link>
-      <h1 className="text-3xl text-center mt-6 font-bold mb-6">Buy</h1>
+              </button>
+              </Link>
+      <h1 className="text-3xl text-center mt-6 font-bold mb-6">Trending Homes</h1>
       {loading ? (
         <Spinner />
       ) : listings && listings.length > 0 ? (

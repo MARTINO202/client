@@ -1,0 +1,4 @@
+.long-text{
+    overflow: hidden;
+    display: inline-block;
+}

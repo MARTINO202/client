@@ -1,7 +1,7 @@
 export const data = [
     {
       id: 1,
-      img: 'https://oulahen.com/wp-content/uploads/2018/11/Role-of-a-Realtor.jpg',
+      img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
     },
     {
       id: 2,

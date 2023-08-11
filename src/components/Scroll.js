@@ -15,8 +15,8 @@ function Scroll() {
   return (
     <>
     
-    <h2 className="px-3 text-2xl mt-6 font-semibold text-center">RENT And Own A House Today</h2>
-    <h4 className="px-3 text-2xl mt-6 font-small mt-[0.2rem] text-center">In The United State </h4>
+    <h2 className="px-3 text-2xl mt-6 font-semibold text-center text-cyan-600">Start or continue your home</h2>
+    <h4 className="px-3 text-2xl mt-6 font-small mt-[0.2rem] text-center">ownership journey with us today. </h4>
     <div className='relative flex items-center'>
     <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
     <div

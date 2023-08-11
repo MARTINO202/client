@@ -22,6 +22,7 @@ import {
   FaBath,
   FaParking,
   FaChair,
+  FaEye,
 } from "react-icons/fa";
 import { getAuth } from "firebase/auth";
 import Contact from "../components/Contact";
@@ -50,11 +51,11 @@ export default function Listing() {
     return <Spinner />;
   }
   return (
-    <main>
+    <main className="m-0">
       <Link to="/">
     <button
                 
-                className="bg-white px-3 py-1.5 text-gray-700 border border-gray-300 mb-0 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out"
+                className="bg-white m-0 px-3 py-1 text-gray-700 border border-gray-300 mb-0 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
@@ -127,6 +128,14 @@ export default function Listing() {
             <FaMapMarkerAlt className="text-green-700 mr-1" />
             {listing.address}
           </p>
+          
+
+          <li className="flex items-center whitespace-nowrap  mt-6 mb-3">
+              <FaEye className="text-lg mr-1" />
+              {+listing.views > 1 ? `${listing.views} people viewed this today` : "1 view"}
+            </li>
+
+
           <div className="flex justify-start items-center space-x-4 w-[75%]">
             <p className="bg-red-800 w-full max-w-[200px] rounded-md p-1 text-white text-center font-semibold shadow-md">
               {listing.type === "rent" ? "Rent" : "Sale"}
@@ -141,7 +150,7 @@ export default function Listing() {
             <span className="font-semibold">Description - </span>
             {listing.description}
           </p>
-          <ul className="flex items-center space-x-2 sm:space-x-10 text-sm font-semibold mb-6">
+          <ul className="flex items-center space-x-2 sm:space-x-10 text-[0.7rem] font-semibold mb-6 lg:m6">
             <li className="flex items-center whitespace-nowrap">
               <FaBed className="text-lg mr-1" />
               {+listing.bedrooms > 1 ? `${listing.bedrooms} Beds` : "1 Bed"}
@@ -150,6 +159,8 @@ export default function Listing() {
               <FaBath className="text-lg mr-1" />
               {+listing.bathrooms > 1 ? `${listing.bathrooms} Baths` : "1 Bath"}
             </li>
+
+           
             <li className="flex items-center whitespace-nowrap">
               <FaParking className="text-lg mr-1" />
               {listing.parking ? "Parking spot" : "No parking"}
@@ -168,6 +179,7 @@ export default function Listing() {
                 Contact Landlord
               </button>
             </div>
+            
           )}
           {contactLandlord && (
             <Contact userRef={listing.userRef} listing={listing} />
@@ -207,7 +219,7 @@ export default function Listing() {
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
   />
   <Marker 
-  position={[51.505, -0.09]}>
+  position={[41.505, -72.09]}>
     <Popup>
     {listing.address}
     </Popup>

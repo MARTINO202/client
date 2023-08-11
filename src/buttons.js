@@ -1,3 +1,3 @@
 export const buttons= [
-  { title: "BUY", path:'/offers' },
+  { title: "BUY", path:'/category/sale' },
 ];

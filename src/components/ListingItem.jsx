@@ -50,6 +50,13 @@ export default function ListingItem({ listing, id, onEdit, onDelete }) {
                   : "1 Bath"}
               </p>
             </div>
+            <div className="flex items-center space-x-1">
+              <p className="font-bold text-xs">
+                {listing.views > 1
+                  ? `${listing.views} views`
+                  : "1 view"}
+              </p>
+            </div>
           </div>
         </div>
       </Link>

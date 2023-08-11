@@ -32,6 +32,7 @@ export default function Header({ title, border, underline }) {
 
  
   let [open, setOpen] =useState(false);
+  let [close, setClose] =useState(false);
 
 
 
@@ -124,27 +125,31 @@ export default function Header({ title, border, underline }) {
 
             {/* link.mobile items */}
 
-<div className="lg:hidden absolute  top-[55px] right-[11.1rem] w-[100%] z-40 mx-[-99]  bg-white  ">
+<div className="lg:hidden absolute  top-[55px] right-[11.1rem] w-[100%] text-center z-40 mx-[-99]  bg-white  ">
               <ul className={`inline-block border-2 mb-3  space-x-0 items-center lg:pb-0 pb-12  w-full space-y-20 sm:space-y-15 py-4  ${open ? 'top-12' : 'top-[-490px] hidden'}`}>
                 
-                    <li  onClick={() => navigate("/")} className='hover:text-cyan-600 relative my-3  border-black text-center margin-bottom-3 left-6 group text-[18px] whitespace-nowrap'>
-                    <a  className="hover:text-cyan-600" >Home</a>
+                    <li  onClick={() => navigate("/")} className='hover:text-cyan-600 relative my-3  border-black text-center margin-bottom-3 left-9 group text-[18px] whitespace-nowrap'>
+                    <a  href="/" className="hover:text-cyan-600" >Home</a>
                        
                     </li>
-                    <li  onClick={() => navigate("/offers")} className='hover:text-cyan-600 relative text-center  left-3 group text-[18px] whitespace-nowrap'>
-                    <a  className={`px-2  `}>Buy</a>
+                    <li  onClick={() => navigate("/category/sale")} className='hover:text-cyan-600 relative text-center  left-6 group text-[18px] whitespace-nowrap'>
+                    <a  href="/category/sale" className={`px-2  `}>Buy</a>
                        
                     </li>
-                    <li  onClick={() => navigate("/about")} className='hover:text-cyan-600 relative text-center left-8 group text-[18px] whitespace-nowrap'>
+                    <li  onClick={() => navigate("/category/rent")} className='hover:text-cyan-600 relative text-center  left-6 group text-[18px] whitespace-nowrap'>
+                    <a  href="/category/rent" className={`px-2  `}>Rent</a>
+                       
+                    </li>
+                    <li  onClick={() => navigate("/about")} className='hover:text-cyan-600 relative text-center left-11 group text-[18px] whitespace-nowrap'>
                         <a href="/about" className={`px-2 ${border} `}>About Us</a>
                        
                     </li>
-                    <li  onClick={() => navigate("/about")} className='hover:text-cyan-600 relative text-center left-14 group text-[17px] whitespace-nowrap'>
-                        <a className={`px-2 ${border} `}>Contact an Agent</a>
+                    <li  onClick={() => navigate("/agent")} className='hover:text-cyan-600 relative text-center text-center left-[40px] group text-[18px] whitespace-nowrap'>
+                        <a href="/agent" className={`px-2 ${border}text-center `}> Agents</a>
                        
                     </li>
-                    <li className='relative  text-center group left-14 text-[13px] whitespace-nowrap'>
-                        <h1  className={`px-2 ${border} text-cyan-600 `}>Find Homes on the go!</h1>
+                    <li onClick={() => navigate("/offers")} className='relative  text-center group left-[70px] text-[15px] whitespace-nowrap'>
+                        <a href="/offers" className={`px-2 ${border} text-cyan-600 `}>Trennding Houses</a>
                        
                     </li>
           {/* Logo */}
@@ -152,10 +157,10 @@ export default function Header({ title, border, underline }) {
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
 
-             <h1  onClick={() => navigate("")} className="text-1xl font-semibold italic text-black">
-              Casey<span className="text-cyan-600">Homes</span></h1>
-              <h1  onClick={() => navigate("")} className=" text-1xl font-semibold italic text-black">
-              Casey<span className="text-cyan-600">Homes</span></h1>
+             <h1  onClick={() => navigate("")} className="text-1xl font-semibold text-white italic text-black">
+              Casey<span className="text-white">Homes</span></h1>
+              <h1  onClick={() => navigate("")} className="text-white text-1xl font-semibold italic text-black">
+              Casey<span className="text-white">Homes</span></h1>
           
         
                     {/*
@@ -188,11 +193,12 @@ export default function Header({ title, border, underline }) {
               <div className="hidden lg:flex  ">
               <ul className={`flex   group text-[20px] whitespace-nowrap gap-5  space-x-2 items-center   w-full space-y-0  lg:w-auto lg:space-y-0 lg:space-x-2   py-4`}>
                  <li onClick={() => navigate("/")} className="hover:text-cyan-600 cursor-pointer  ">Home </li>
-                 <li onClick={() => navigate("/offers")} className="hover:text-cyan-600 cursor-pointer"> Buy</li>
+                 <li onClick={() => navigate("/category/sales")} className="hover:text-cyan-600 cursor-pointer"> Buy</li>
+                 <li onClick={() => navigate("/category/rent")} className="hover:text-cyan-600 cursor-pointer"> Rent</li>
                  <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer ">About Us </li>
-                 <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer">Contact Our Agents </li>
-                {/*} <li onClick={() => navigate("/")} className="cursor-pointer">Find Realtors </li>
-                 <li onClick={() => navigate("/")} className="cursor-pointer ">My Home </li>
+                 <li onClick={() => navigate("/agent")} className="hover:text-cyan-600 cursor-pointer">Agents </li>
+                 <li onClick={() => navigate("/offers")} className="cursor-pointer">Trendinng Homes</li>
+                {/*} <li onClick={() => navigate("/")} className="cursor-pointer ">My Home </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer">News & Insights </li>
                  <li onClick={() => navigate("/")}  className="cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Manage Rentals </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Advertise </li>
@@ -202,14 +208,36 @@ export default function Header({ title, border, underline }) {
 
 
 
-        {/* Right Authentification 
+        {/* Right Authentification */}
         <div className="flex h-full items-center  lg:hidden">
-          <div className="w-10 h-10 bg-[#e20112] rounded-full text-white flex items-center justify-center ">
-            <HiOutlineUser className="text-[28px] " />
+          <div onClick={()=>setClose(!close)} className="w-10 h-10 bg-cyan-600 rounded-full text-white flex items-center justify-center ">
+            {
+           close ? <HiOutlineUser className="text-[28px] " />:<HiOutlineUser className="text-[28px] " />
+            }
           </div>
-        </div>*/}
+        </div>
 
-        <div className=" lg:flex   items-center pl-6 text-[13px]">
+
+        <div  onClick={() => navigate("/profile")} className="lg:flex absolute text-center text-[1.1rem]  top-[55px] left-[18.7rem] w-[20.5%] z-40 mx-[-99]  bg-white">
+          
+        <li
+              className={` inline-block border-2 mb-3  space-x-0 items-center lg:pb-0 pb-12  w-full space-y-20 sm:space-y-15 py-4 ${close ? 'top-12' : 'top-[-490px] hidden '} ${
+                (pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&
+                "text-black border-b-red-500"
+              }`}
+            >
+          <button ><a href="">{pageState} </a></button>
+          </li>
+         
+        
+    
+        </div>
+
+
+
+
+
+        <div className="hidden  lg:flex   items-center pl-6 text-[13px]">
         <li
               className={` bg-cyan-700  hover:bg-sky-700  py-[10px] text-white rounded-full px-4 ml-6 flex items-center ${
                 (pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&

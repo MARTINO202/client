@@ -23,6 +23,7 @@ export default function CreateListing() {
     name: "",
     bedrooms: 1,
     bathrooms: 1,
+    views: 1,
     parking: false,
     furnished: false,
     address: "",
@@ -38,6 +39,7 @@ export default function CreateListing() {
     type,
     name,
     bedrooms,
+    views,
     bathrooms,
     parking,
     address,
@@ -81,9 +83,9 @@ export default function CreateListing() {
       toast.error("Discounted price needs to be less than regular price");
       return;
     }
-    if (images.length > 16) {
+    if (images.length > 100) {
       setLoading(false);
-      toast.error("maximum 16 images are allowed");
+      toast.error("maximum 99 images are allowed");
       return;
     }
     let geolocation = {};
@@ -234,6 +236,25 @@ export default function CreateListing() {
               className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"
             />
           </div>
+
+
+          <p className="text-lg font-semibold">Views</p>
+            <input
+              type="number"
+              id="views"
+              value={views}
+              onChange={onChange}
+              min="1"
+              max="50"
+              required
+              className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"
+            />
+          </div>
+
+
+
+
+
           <div>
             <p className="text-lg font-semibold">Baths</p>
             <input
@@ -246,7 +267,6 @@ export default function CreateListing() {
               required
               className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"
             />
-          </div>
         </div>
         <p className="text-lg mt-6 font-semibold">Parking spot</p>
         <div className="flex">
@@ -424,7 +444,7 @@ export default function CreateListing() {
         <div className="mb-6">
           <p className="text-lg font-semibold">Images</p>
           <p className="text-gray-600">
-            The first image will be the cover (max 16)
+            The first image will be the cover (max 99)
           </p>
           <input
             type="file"

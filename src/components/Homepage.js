@@ -1,11 +1,13 @@
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import houses from "../assets/city.jpg";
+
+import houses from "../assets/housess.jpg";
 import HomepageBtn from "./HomepageBtn";
 import { RiSearchLine } from "react-icons/ri";
 import Scroll from "../components/Scroll"
 import { buttons } from "../buttons";
+import Blogs from "./Blogs/Blog";
 
 const Hero = () => {
   const buttons = [
@@ -92,6 +94,22 @@ const Hero = () => {
       </div>
     </div>
     <Scroll />
+    <div className="flex mx-20 ">
+     <div className="flex space-x-5 ">
+     <button onClick={() => navigate("/category/sale")} class="content-center mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Buy
+</button>
+<button onClick={() => navigate("/category/rent")} class="content-center mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Rent
+</button>
+     
+      <button onClick={() => navigate("offers")} class="content-center mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Trending Houses
+</button>
+
+     </div>
+    </div>
+   <Blogs />
     </>
   );
 };
