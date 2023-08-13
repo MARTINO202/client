@@ -104,7 +104,6 @@ Casey maintains a home on the water near Galveston Island and loves cruising on 
       
     </div>
     </div>
-    <Footer />
   </section>
   )
 }

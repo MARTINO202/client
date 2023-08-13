@@ -48,7 +48,6 @@ const Portfolio = () => {
             </div>*/}
           </div>
         </div>
-        <Footer />
       </section>
     </>
   )

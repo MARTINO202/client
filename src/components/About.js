@@ -106,7 +106,6 @@ caseyhomes.com® also offers homeowners a bevy of useful tools and resources thr
       </div>
       
     </div>
-    <Footer/>
   </section>
   )
 }

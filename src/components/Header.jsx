@@ -193,7 +193,7 @@ export default function Header({ title, border, underline }) {
               <div className="hidden lg:flex  ">
               <ul className={`flex   group text-[20px] whitespace-nowrap gap-5  space-x-2 items-center   w-full space-y-0  lg:w-auto lg:space-y-0 lg:space-x-2   py-4`}>
                  <li onClick={() => navigate("/")} className="hover:text-cyan-600 cursor-pointer  ">Home </li>
-                 <li onClick={() => navigate("/category/sales")} className="hover:text-cyan-600 cursor-pointer"> Buy</li>
+                 <li onClick={() => navigate("/category/sale")} className="hover:text-cyan-600 cursor-pointer"> Buy</li>
                  <li onClick={() => navigate("/category/rent")} className="hover:text-cyan-600 cursor-pointer"> Rent</li>
                  <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer ">About Us </li>
                  <li onClick={() => navigate("/agent")} className="hover:text-cyan-600 cursor-pointer">Agents </li>

@@ -19,6 +19,7 @@ import Category from "./pages/Category";
 import Services from "./components/Services";
 import Portfolio from './components/Portfolio/Portfolio';
 import Blog from "./components/Blog/Blog"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             <Route path="/edit-listing/:listingId" element={<EditListing />} />
           </Route>
         </Routes>
+        <Footer />
       </Router>
       <ToastContainer
         position="bottom-center"

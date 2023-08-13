@@ -127,7 +127,6 @@ export default function Category() {
             : "places for sale"}
         </p>
       )}
-      <Footer />
     </div>
   );
 }

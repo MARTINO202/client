@@ -228,7 +228,6 @@ export default function Listing() {
 
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
