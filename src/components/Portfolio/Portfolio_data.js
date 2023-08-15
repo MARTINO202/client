@@ -1,5 +1,11 @@
 const Portfolio_data = [
- 
+  {
+    id: 1,
+    category: "Casey Milton",
+    totalLike: "Huston/Texas",
+    title: "The CEO ",
+    image: "../img/aboutImg.jpeg",
+  },
   {
     id: 2,
     category: "Peter Angelo",

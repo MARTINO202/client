@@ -23,7 +23,7 @@ const Footer = () => {
 </svg>
 
              <h1  onClick={() => navigate("/")} className="text-2xl font-semibold italic text-black">
-              Casey<span className="text-cyan-600">Homes</span></h1>
+              Casey<span className="text-cyan-600">MiltonHomes</span></h1>
           </div>
         </div>
           <br />
@@ -42,7 +42,7 @@ const Footer = () => {
         <ul className="text-center  text-black sm:text-start">
           <h1 className="mb-1 font-semibold text-black">Company</h1>
           
-            <li> Casey<span className="text-cyan-600">Homes.com</span></li>
+            <li> Casey<span className="text-cyan-600">MiltonHomes.com</span></li>
           
         </ul>
 
@@ -50,8 +50,10 @@ const Footer = () => {
           <h1 className="mb-1 font-semibold text-black">About Us</h1>
           
             <li className="text-cyan-600 cursor-pointer"  onClick={() => navigate("/about")}>About</li>
+            
+            <li className="text-cyan-600 cursor-pointer"  onClick={() => navigate("/agent")}>Agents</li>
             <li>
-      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">caseyhomes.com</a></p>
+      <p className="text-white-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:info@Caseymiltonhomes.com'}  className="cursor-pointer text-cyan-600"> Caseymiltonhomes.com</a></p>
      </li>
           
         </ul>
@@ -72,7 +74,7 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
          text-center pt-2 text-gray-400 text-sm pb-8"
       >
-        <span>©<li> Casey<span className="text-cyan-600">Homes.com</span></li>. All rights reserved.</span>
+        <span>©<li> Casey<span className="text-cyan-600">MiltonHomes.com</span></li>. All rights reserved.</span>
         <span>2006</span>
         <div className="sm:block flex items-center justify-center w-full">
           <img

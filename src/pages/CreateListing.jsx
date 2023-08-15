@@ -217,7 +217,7 @@ export default function CreateListing() {
           value={name}
           onChange={onChange}
           placeholder="Name"
-          maxLength="32"
+          maxLength="100"
           minLength="10"
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
@@ -245,7 +245,7 @@ export default function CreateListing() {
               value={views}
               onChange={onChange}
               min="1"
-              max="50"
+              max="5000"
               required
               className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"
             />
@@ -403,7 +403,7 @@ export default function CreateListing() {
                 value={regularPrice}
                 onChange={onChange}
                 min="50"
-                max="400000000"
+                max="40000000000"
                 required
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 text-center"
               />

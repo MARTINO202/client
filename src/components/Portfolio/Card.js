@@ -49,7 +49,7 @@ const Card = (props) => {
               <h1>{props.title}</h1>
               <span className="w-[100%] h-[100%]">{props.about}</span>
                <div className='button center mt-5 item-center content-center'>
-                <button onClick={() => window.location = 'mailto:caseyhomes.com'} className='btn_shadow '>
+                <button onClick={() => window.location = 'mailto: info@Caseymiltonhomes.com'} className='btn_shadow '>
                   Contact Agent
                 </button>
               </div>

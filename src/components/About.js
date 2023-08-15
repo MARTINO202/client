@@ -40,7 +40,7 @@ function About() {
 
     <div className="text-center mt-8">
       <h3 className=" text-3xl font-semibold">
-        About <span className="text-cyan-600">CaseyHomes.com</span>
+        About <span className="text-cyan-600"> Caseymiltonhomes</span>
       </h3>
 
 
@@ -59,14 +59,14 @@ function About() {
 
 
       {/*<VideoCarousel/>*/}
-     {/*} <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@caseyhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@caseyhomes.com</a></p>*/}
+     {/*} <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:Casey.milton@ Caseymiltonhomes.com'}  className="cursor-pointer text-cyan-600">Casey.milton@ Caseymiltonhomes.com</a></p>*/}
       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         <div className="p-2">
           <div className=" text-white my-3">
             <p className={` text-justify leading-7 w-11/12 mx-auto text-white`}>
-            For years, millions of home shoppers have turned to caseyhomes.com® to find their dream home. Operated by Move, Inc., realtor.com® offers a comprehensive list of for-sale properties, as well as the information and tools to make informed real estate decisions. Today, more than ever, caseyhomes.com® is The Home of Home Search℠.
+            For years, millions of home shoppers have turned to  Caseymiltonhomes.com® to find their dream home. Operated by Move, Inc., realtor.com® offers a comprehensive list of for-sale properties, as well as the information and tools to make informed real estate decisions. Today, more than ever,  Caseymiltonhomes.com® is The Home of Home Search℠.
 
-caseyhomes.com® also offers homeowners a bevy of useful tools and resources through the My Home℠ dashboard. My Home℠ dashboard allows property owners to manage their home like the important investment it is by tracking their home’s value over time, researching and managing home improvements, and scouting other similar properties in the neighborhood. </p>
+ Caseymiltonhomes.com® also offers homeowners a bevy of useful tools and resources through the My Home℠ dashboard. My Home℠ dashboard allows property owners to manage their home like the important investment it is by tracking their home’s value over time, researching and managing home improvements, and scouting other similar properties in the neighborhood. </p>
             {/*<button className='text-cyan-600'  onClick={()=>setIsOpen(!isOpen)}>{isOpen? 'Read less...': 'Read more...'}</button>
           */}
             <br />

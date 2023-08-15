@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
     </div>
     <Scroll />
-    <div className="flex mx-20 ">
+    <div className="flex mx-10 ">
      <div className="flex space-x-5 ">
      <button onClick={() => navigate("/category/sale")} class="content-center mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   Buy

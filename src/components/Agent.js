@@ -41,7 +41,7 @@ function Agent() {
       <h3 className=" text-4xl font-semibold">
         Our <span className="text-cyan-600">Team</span>
       </h3>
-      <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:caseyhomes.com'}  className="cursor-pointer text-cyan-600">caseyhomes.com</a></p>
+      <p className="text-gray-400 my-3 text-lg">Email:  <a  onClick={() => window.location = 'mailto:info@Caseymiltonhomes.com'}  className="cursor-pointer text-cyan-600"> Caseymiltonhomes.com</a></p>
       
       <VideoCarousel/>
       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
