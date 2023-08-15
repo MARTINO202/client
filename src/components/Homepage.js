@@ -59,7 +59,7 @@ const Hero = () => {
 
 <div className="flex  ">
               <ul className={`flex     group text-[20px] whitespace-nowrap  space-x-2 items-center   w-full space-y-0  lg:w-auto lg:space-y-0 lg:space-x-2   py-4`}>
-                 <li onClick={() => navigate("/Offers")} className=" cursor-pointer text-white border p-1 hover:bg-sky-700 rounded-[0.3rem] bg-black border-gray-400">Buy </li>
+                 <li onClick={() => navigate("/category/sale")} className=" cursor-pointer text-white border p-1 hover:bg-sky-700 rounded-[0.3rem] bg-black border-gray-400">Buy </li>
                 {/* <li onClick={() => navigate("/category/sale")} className="cursor-pointer"> Sale</li>*/}
                 {/* <li onClick={() => navigate("/category/rent")} className="cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Rent </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer">Mortgage </li>
