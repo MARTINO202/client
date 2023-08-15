@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useLocation } from "react-router-dom";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -8,6 +11,24 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const [pageState, setPageState] = useState("Sign in");
+  const location = useLocation();
+ 
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setPageState("Profile");
+      } else {
+        setPageState("Sign in");
+      }
+    });
+  }, [auth]);
+  function pathMatchRoute(route) {
+    if (route === location.pathname) {
+      return true;
+    }
+  }
   
   const navigate = useNavigate();
   return (
@@ -45,6 +66,20 @@ const Footer = () => {
             <li> Casey<span className="text-cyan-600">MiltonHomes.com</span></li>
           
         </ul>
+
+        <div className="hidden  lg:flex   items-center pl-6 text-[13px]">
+        <li
+              className={` bg-cyan-700  hover:bg-sky-700  py-[10px] text-white rounded-full px-4 ml-6 flex items-center ${
+                (pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&
+                "text-black border-b-red-500"
+              }`}
+              onClick={() => navigate("/profile")}
+            >
+          <button >{pageState}</button>
+          </li>
+        
+    
+        </div>
 
         <ul className="text-center text-black sm:text-start">
           <h1 className="mb-1 font-semibold text-black">About Us</h1>
