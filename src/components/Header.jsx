@@ -198,6 +198,19 @@ export default function Header({ title, border, underline }) {
                  <li onClick={() => navigate("/about")} className="hover:text-cyan-600 cursor-pointer ">About Us </li>
                  <li onClick={() => navigate("/agent")} className="hover:text-cyan-600 cursor-pointer">Agents </li>
                  <li onClick={() => navigate("/offers")} className="cursor-pointer">Trendinng Homes</li>
+                 <div className="hidden  lg:flex   items-center pl-6 text-[13px]">
+        <li
+              className={` bg-cyan-700  hover:bg-sky-700  py-[10px] text-white rounded-full px-4 ml-6 flex items-center ${
+                (pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) &&
+                "text-black border-b-red-500"
+              }`}
+              onClick={() => navigate("/profile")}
+            >
+          <button >{pageState}</button>
+          </li>
+        
+    
+        </div>
                 {/*} <li onClick={() => navigate("/")} className="cursor-pointer ">My Home </li>
                  <li onClick={() => navigate("/")} className="cursor-pointer">News & Insights </li>
                  <li onClick={() => navigate("/")}  className="cursor-pointer border p-1 rounded-[0.3rem] border-gray-400">Manage Rentals </li>
