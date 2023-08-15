@@ -115,3 +115,12 @@ _redirect    = /* /index.html  200
     title: "The CEO ",
     image: "../assets/aboutImg.jpeg",
   },
+
+
+
+  "homepage": "https://MARTINO202.github.io/client"
+
+
+  
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
